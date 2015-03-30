@@ -1,0 +1,42 @@
+# exceptionHandling
+package jrJava.exceptionHandling;
+
+public class Test {
+
+
+	public static void main(String[] args) {
+		/*
+		int [] numbers = new int[]{10,11,12};
+
+		try{
+
+
+
+		System.out.println(numbers[3]);
+		}
+		catch(IndexOutOfBoundsException iobe){
+			System.out.println("ouch");
+		}
+
+		System.out.println(numbers[0]);
+		System.out.println(numbers[1]);
+
+
+		 */
+
+		Ball ball= null;
+		updateBall(ball);
+
+	}
+
+	private static void updateBall(Ball _ball){
+
+	try{
+			_ball.update();
+	}
+	catch(NullPointerException npe){
+		System.out.println("whoops");
+	}
+	
+	}
+}
