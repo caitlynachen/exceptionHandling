@@ -1,0 +1,17 @@
+package jrJava.exceptionHandling;
+
+public class Ball {
+
+	private int x = 300;
+	private int y = 200;
+	private int dx = 3;
+	private int dy = -5;
+	
+	public Ball(){}
+	
+	public void update(){
+		x = x+dx;
+		y  = y+dy;
+		System.out.println("Im here");
+	}
+}
